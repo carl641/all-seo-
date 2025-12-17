@@ -798,10 +798,12 @@ p {
   color: var(--color-white);
 }
 
-.cta p {
+.cta p,
+.cta .lead {
   max-width: 600px;
   margin: 0 auto var(--spacing-xl);
   opacity: 0.9;
+  color: var(--color-white);
 }
 
 .cta .btn--secondary {
