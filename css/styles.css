@@ -1011,13 +1011,27 @@ p {
 }
 
 .footer__links a {
-  color: var(--color-gray-400);
+  color: var(--color-gray-300);
   font-size: 0.9375rem;
   transition: color var(--transition-fast);
 }
 
 .footer__links a:hover {
   color: var(--color-white);
+}
+
+/* Footer logo contrast fix - ensure logo text is visible on dark background */
+.footer .logo {
+  color: var(--color-white);
+}
+
+.footer .logo span {
+  color: var(--color-primary-light);
+}
+
+/* Improve footer text contrast */
+.footer__brand p {
+  color: var(--color-gray-300);
 }
 
 .footer__bottom {
@@ -1027,6 +1041,7 @@ p {
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
+  color: var(--color-gray-300);
 }
 
 .footer__social {
@@ -1042,7 +1057,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-gray-400);
+  color: var(--color-gray-300);
   transition: all var(--transition-fast);
 }
 
