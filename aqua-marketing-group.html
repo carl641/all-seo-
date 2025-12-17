@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SEO Teardown of Aqua Marketing Group - A detailed 5-Point Inspection analysis of this Alabama digital marketing agency's website. Final Grade: A-">
+  <meta name="keywords" content="Aqua Marketing Group review, SEO teardown, digital marketing agency audit, Alabama SEO, website analysis">
+
+  <title>Aqua Marketing Group SEO Teardown | AllSEOMarketing</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%232563eb' rx='15' width='100' height='100'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold' font-size='50'>AS</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Teardown-specific styles */
+    .teardown-hero {
+      padding-top: 120px;
+      padding-bottom: var(--spacing-3xl);
+      background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0e7490 100%);
+      color: var(--color-white);
+    }
+
+    .teardown-hero__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--spacing-xl);
+      flex-wrap: wrap;
+    }
+
+    .teardown-hero__info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .teardown-hero__category {
+      display: inline-block;
+      padding: var(--spacing-xs) var(--spacing-md);
+      background: rgba(255,255,255,0.2);
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .teardown-hero h1 {
+      color: var(--color-white);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .teardown-hero__url {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      opacity: 0.8;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .teardown-hero__summary {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+
+    .final-grade {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      text-align: center;
+      min-width: 200px;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .final-grade__label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-gray-500);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .final-grade__letter {
+      font-size: 4rem;
+      font-weight: 800;
+      color: #10b981;
+      line-height: 1;
+    }
+
+    .final-grade__text {
+      font-size: 0.875rem;
+      color: var(--color-gray-600);
+      margin-top: var(--spacing-sm);
+    }
+
+    /* Scorecard */
+    .scorecard {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .scorecard__header {
+      padding: var(--spacing-xl);
+      border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .scorecard__title {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .scorecard__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+    }
+
+    .scorecard__item {
+      padding: var(--spacing-xl);
+      text-align: center;
+      border-right: 1px solid var(--color-gray-100);
+    }
+
+    .scorecard__item:last-child {
+      border-right: none;
+    }
+
+    .scorecard__item-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-gray-500);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .scorecard__item-grade {
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .scorecard__item-grade.grade-a { color: #10b981; }
+    .scorecard__item-grade.grade-b { color: #22c55e; }
+    .scorecard__item-grade.grade-c { color: #f59e0b; }
+
+    /* Analysis sections */
+    .analysis-section {
+      padding: var(--spacing-3xl) 0;
+      border-bottom: 1px solid var(--color-gray-100);
+    }
+
+    .analysis-section:last-of-type {
+      border-bottom: none;
+    }
+
+    .analysis-section--alt {
+      background: var(--color-gray-50);
+    }
+
+    .analysis-header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .analysis-number {
+      width: 50px;
+      height: 50px;
+      background: var(--color-primary);
+      color: var(--color-white);
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .analysis-number--green { background: #10b981; }
+    .analysis-number--yellow { background: #f59e0b; }
+    .analysis-number--purple { background: #8b5cf6; }
+    .analysis-number--red { background: #ef4444; }
+
+    .analysis-title-group h2 {
+      font-size: 1.75rem;
+      margin-bottom: var(--spacing-xs);
+    }
+
+    .analysis-subtitle {
+      color: var(--color-gray-500);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .analysis-grade {
+      margin-left: auto;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      background: var(--color-gray-100);
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .analysis-grade.grade-a { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+    .analysis-grade.grade-b { background: rgba(34, 197, 94, 0.1); color: #22c55e; }
+
+    .finding {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
+      border-left: 4px solid var(--color-gray-200);
+    }
+
+    .finding--pass {
+      border-left-color: #10b981;
+      background: rgba(16, 185, 129, 0.03);
+    }
+
+    .finding--excellent {
+      border-left-color: #10b981;
+      background: rgba(16, 185, 129, 0.05);
+    }
+
+    .finding--mixed {
+      border-left-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.03);
+    }
+
+    .finding--good {
+      border-left-color: #22c55e;
+      background: rgba(34, 197, 94, 0.03);
+    }
+
+    .finding__header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .finding__status {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--spacing-xs);
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .finding__status--pass {
+      background: rgba(16, 185, 129, 0.1);
+      color: #10b981;
+    }
+
+    .finding__status--excellent {
+      background: rgba(16, 185, 129, 0.15);
+      color: #059669;
+    }
+
+    .finding__status--mixed {
+      background: rgba(245, 158, 11, 0.1);
+      color: #d97706;
+    }
+
+    .finding__status--good {
+      background: rgba(34, 197, 94, 0.1);
+      color: #16a34a;
+    }
+
+    .finding__title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--color-secondary);
+    }
+
+    .finding__content {
+      color: var(--color-gray-600);
+      line-height: 1.7;
+    }
+
+    .finding__content p {
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .finding__content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .code-example {
+      background: var(--color-gray-800);
+      color: #e2e8f0;
+      padding: var(--spacing-md);
+      border-radius: var(--radius-md);
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      overflow-x: auto;
+      margin: var(--spacing-md) 0;
+    }
+
+    .code-example code {
+      color: #10b981;
+    }
+
+    /* Fix it box */
+    .fix-it-box {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      border: 2px solid #f59e0b;
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      margin: var(--spacing-xl) 0;
+    }
+
+    .fix-it-box__header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .fix-it-box__icon {
+      width: 40px;
+      height: 40px;
+      background: #f59e0b;
+      color: white;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fix-it-box__title {
+      font-size: 1.25rem;
+      color: #92400e;
+      margin: 0;
+    }
+
+    .fix-it-box__content {
+      color: #78350f;
+      line-height: 1.7;
+    }
+
+    .fix-it-box .code-example {
+      background: #78350f;
+      color: #fef3c7;
+    }
+
+    /* Key takeaways */
+    .takeaways {
+      background: var(--color-secondary);
+      color: var(--color-white);
+      padding: var(--spacing-3xl) 0;
+    }
+
+    .takeaways h2 {
+      color: var(--color-white);
+      text-align: center;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .takeaway-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--spacing-xl);
+    }
+
+    .takeaway-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+    }
+
+    .takeaway-card__icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.2);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--spacing-md);
+      font-size: 1.5rem;
+    }
+
+    .takeaway-card h4 {
+      color: var(--color-white);
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .takeaway-card p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .teardown-hero__header {
+        flex-direction: column;
+      }
+
+      .final-grade {
+        align-self: flex-start;
+      }
+
+      .scorecard__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .scorecard__item:nth-child(2) {
+        border-right: none;
+      }
+
+      .scorecard__item:nth-child(4) {
+        border-right: none;
+      }
+
+      .scorecard__item:nth-child(5) {
+        grid-column: span 2;
+        border-top: 1px solid var(--color-gray-100);
+      }
+
+      .analysis-header {
+        flex-wrap: wrap;
+      }
+
+      .analysis-grade {
+        margin-left: 0;
+        margin-top: var(--spacing-md);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__icon">AS</div>
+        All<span>SEO</span>Marketing
+      </a>
+      <nav class="nav">
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="framework.html" class="nav__link">Our Framework</a></li>
+          <li><a href="teardowns.html" class="nav__link active">Teardowns</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary">Get Your Audit</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Teardown Hero -->
+  <section class="teardown-hero">
+    <div class="container">
+      <div class="teardown-hero__header">
+        <div class="teardown-hero__info">
+          <span class="teardown-hero__category">Digital Marketing Agency</span>
+          <h1>Aqua Marketing Group</h1>
+          <p class="teardown-hero__url">aquamarketinggroup.com</p>
+          <p class="teardown-hero__summary">
+            A deep-dive SEO audit of this Alabama-based digital marketing agency. Aqua Marketing Group demonstrates excellent local SEO fundamentals with room for one critical optimization.
+          </p>
+        </div>
+        <div class="final-grade">
+          <div class="final-grade__label">Final Grade</div>
+          <div class="final-grade__letter">A-</div>
+          <div class="final-grade__text">Excellent Performance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scorecard -->
+  <section class="section" style="padding-top: 0; padding-bottom: var(--spacing-2xl);">
+    <div class="container">
+      <div class="scorecard">
+        <div class="scorecard__header">
+          <h2 class="scorecard__title">The AllSEOMarketing Scorecard</h2>
+        </div>
+        <div class="scorecard__grid">
+          <div class="scorecard__item">
+            <div class="scorecard__item-label">Clickability (SERP)</div>
+            <div class="scorecard__item-grade grade-a">A-</div>
+          </div>
+          <div class="scorecard__item">
+            <div class="scorecard__item-label">Tech Stack</div>
+            <div class="scorecard__item-grade grade-b">B+</div>
+          </div>
+          <div class="scorecard__item">
+            <div class="scorecard__item-label">On-Page Structure</div>
+            <div class="scorecard__item-grade grade-a">A</div>
+          </div>
+          <div class="scorecard__item">
+            <div class="scorecard__item-label">Content & Authority</div>
+            <div class="scorecard__item-grade grade-a">A</div>
+          </div>
+          <div class="scorecard__item">
+            <div class="scorecard__item-label">UX / Conversion</div>
+            <div class="scorecard__item-grade grade-b">B</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section 1: SERP Appearance -->
+  <section class="analysis-section">
+    <div class="container">
+      <div class="analysis-header">
+        <div class="analysis-number">1</div>
+        <div class="analysis-title-group">
+          <h2>The SERP Appearance</h2>
+          <p class="analysis-subtitle">"The Click Test"</p>
+        </div>
+        <div class="analysis-grade grade-a">A-</div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Title Tag Hygiene</h3>
+        </div>
+        <div class="finding__content">
+          <p>Their title tag is <strong>"Aqua Marketing Group | Digital Marketing Services in Alabama"</strong>. This is textbook execution:</p>
+          <div class="code-example">
+            <code>Brand Name</code> + <code>Core Keyword</code> + <code>Location</code>
+          </div>
+          <p>It tells Google exactly what they do and where they do it. This structure maximizes click-through rate while maintaining keyword relevance for local searches.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Visual Trust</h3>
+        </div>
+        <div class="finding__content">
+          <p>The site uses consistent branding (water/waves theme) that likely translates to their favicon. The URL structure suggests they are targeting specific local queries (e.g., <code>mobile-marketing-agency.html</code>), which likely generates rich local snippets in search results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section 2: Technical Health -->
+  <section class="analysis-section analysis-section--alt">
+    <div class="container">
+      <div class="analysis-header">
+        <div class="analysis-number analysis-number--green">2</div>
+        <div class="analysis-title-group">
+          <h2>Technical Health</h2>
+          <p class="analysis-subtitle">"The Robot Test"</p>
+        </div>
+        <div class="analysis-grade grade-b">B+</div>
+      </div>
+
+      <div class="finding finding--excellent">
+        <div class="finding__header">
+          <span class="finding__status finding__status--excellent">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+            </svg>
+            Excellent
+          </span>
+          <h3 class="finding__title">URL Structure</h3>
+        </div>
+        <div class="finding__content">
+          <p>Instead of generic URLs like <code>/locations/mobile</code>, they use keyword-rich URLs:</p>
+          <div class="code-example">
+            mobile-marketing-agency.html<br>
+            daphne-marketing-agency.html<br>
+            gulf-shores-marketing-agency.html
+          </div>
+          <p><strong>This is a massive SEO win.</strong> It reinforces the keyword "Marketing Agency" for every single location they service. Each URL is optimized for the exact search query a potential customer would use.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Mobile Usability</h3>
+        </div>
+        <div class="finding__content">
+          <p>The link structure is clean, and the content is chunked into logical sections (Services, Locations, Testimonials) that stack well on mobile devices. No horizontal scrolling issues detected.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Code Bloat</h3>
+        </div>
+        <div class="finding__content">
+          <p>The site uses lightweight SVG images (<code>images/about-wave.svg</code>) for graphics, which keeps load times fast compared to heavy PNGs. This is a smart technical choice that improves Core Web Vitals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section 3: On-Page Structure -->
+  <section class="analysis-section">
+    <div class="container">
+      <div class="analysis-header">
+        <div class="analysis-number analysis-number--yellow">3</div>
+        <div class="analysis-title-group">
+          <h2>On-Page Structure</h2>
+          <p class="analysis-subtitle">"The Skim Test"</p>
+        </div>
+        <div class="analysis-grade grade-a">A</div>
+      </div>
+
+      <div class="finding finding--mixed">
+        <div class="finding__header">
+          <span class="finding__status finding__status--mixed">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Mixed
+          </span>
+          <h3 class="finding__title">Header Hierarchy</h3>
+        </div>
+        <div class="finding__content">
+          <p><strong>The Good:</strong> They use H2s and H3s perfectly for services and locations. The content structure flows logically and helps both users and search engines understand the page organization.</p>
+          <p><strong>The Critique:</strong> Their H1 is <em>"Make Waves in the Digital World."</em> While creative and on-brand, it is <strong>weak for SEO</strong>. Google gives the most weight to the H1 tag. "Make Waves" is not a keyword anyone searches for.</p>
+        </div>
+      </div>
+
+      <!-- Fix It Box -->
+      <div class="fix-it-box">
+        <div class="fix-it-box__header">
+          <div class="fix-it-box__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3 class="fix-it-box__title">The Fix</h3>
+        </div>
+        <div class="fix-it-box__content">
+          <p>Change the H1 to <strong>"Digital Marketing Agency in Alabama"</strong> and move "Make Waves in the Digital World" to the sub-headline (H2 or tagline). This preserves the creative branding while capturing the primary keyword.</p>
+          <div class="code-example">
+            Current: &lt;h1&gt;Make Waves in the Digital World&lt;/h1&gt;<br><br>
+            Recommended: &lt;h1&gt;Digital Marketing Agency in Alabama&lt;/h1&gt;<br>
+            &lt;p class="tagline"&gt;Make Waves in the Digital World&lt;/p&gt;
+          </div>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Image Alt Text</h3>
+        </div>
+        <div class="finding__content">
+          <p>They are actually using Alt Text correctly:</p>
+          <div class="code-example">
+            &lt;img src="images/mobile.jpg" alt="Mobile Alabama Digital Marketing"&gt;
+          </div>
+          <p>Most agencies forget this; Aqua MG nailed it. This helps with image search visibility and accessibility compliance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section 4: Content & Authority -->
+  <section class="analysis-section analysis-section--alt">
+    <div class="container">
+      <div class="analysis-header">
+        <div class="analysis-number analysis-number--purple">4</div>
+        <div class="analysis-title-group">
+          <h2>Content & Authority</h2>
+          <p class="analysis-subtitle">"The Trust Test"</p>
+        </div>
+        <div class="analysis-grade grade-a">A</div>
+      </div>
+
+      <div class="finding finding--excellent">
+        <div class="finding__header">
+          <span class="finding__status finding__status--excellent">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+            </svg>
+            Excellent
+          </span>
+          <h3 class="finding__title">Local Authority</h3>
+        </div>
+        <div class="finding__content">
+          <p>They don't just say "We serve Alabama." They have built <strong>dedicated pages</strong> for Mobile, Daphne, Gulf Shores, and Orange Beach.</p>
+          <p>This is the <strong>gold standard for Local SEO</strong>. It allows them to rank for "SEO in Daphne" and "PPC in Mobile" simultaneously. Each location page becomes a targeted landing page for local search queries.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">E-E-A-T Signals</h3>
+        </div>
+        <div class="finding__content">
+          <p>They list a real physical address (<strong>3223 Springhill Ave</strong>) and a local phone number (<strong>251 area code</strong>). This proves to Google they are a real business, not a generic dropshipping site.</p>
+          <p>These "NAP" (Name, Address, Phone) signals are critical for local search rankings and help build trust with both search engines and potential customers.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--pass">
+        <div class="finding__header">
+          <span class="finding__status finding__status--pass">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Passed
+          </span>
+          <h3 class="finding__title">Social Proof</h3>
+        </div>
+        <div class="finding__content">
+          <p>The testimonials use <strong>Full Names + Business Titles</strong>:</p>
+          <div class="code-example">
+            "Darren Thibodaux, Owner, Gulf Coast Realty"
+          </div>
+          <p>This adds verifiable trust that anonymous reviews ("John D.") lack. Named testimonials with business affiliations significantly increase credibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analysis Section 5: Conversion Optimization -->
+  <section class="analysis-section">
+    <div class="container">
+      <div class="analysis-header">
+        <div class="analysis-number analysis-number--red">5</div>
+        <div class="analysis-title-group">
+          <h2>Conversion Optimization</h2>
+          <p class="analysis-subtitle">"The Money Test"</p>
+        </div>
+        <div class="analysis-grade grade-b">B</div>
+      </div>
+
+      <div class="finding finding--good">
+        <div class="finding__header">
+          <span class="finding__status finding__status--good">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Good
+          </span>
+          <h3 class="finding__title">Call to Action (CTA)</h3>
+        </div>
+        <div class="finding__content">
+          <p>They have clear <strong>"Get Started"</strong> and <strong>"Get Your Free Consultation"</strong> buttons. The CTAs are visible and use action-oriented language that tells visitors exactly what will happen next.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--good">
+        <div class="finding__header">
+          <span class="finding__status finding__status--good">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20,6 9,17 4,12"/>
+            </svg>
+            Good
+          </span>
+          <h3 class="finding__title">Clarity</h3>
+        </div>
+        <div class="finding__content">
+          <p>The services are explained simply: <em>"We optimize your online presence..."</em> The language is accessible and avoids industry jargon that might confuse potential clients.</p>
+        </div>
+      </div>
+
+      <div class="finding finding--mixed">
+        <div class="finding__header">
+          <span class="finding__status finding__status--mixed">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            Opportunity
+          </span>
+          <h3 class="finding__title">Missed Opportunity</h3>
+        </div>
+        <div class="finding__content">
+          <p>The hero section (top of the page) is a bit text-heavy with the brand message. A more direct value proposition might convert cold traffic faster than the "Make Waves" pun.</p>
+          <p><strong>Consider testing:</strong> "We grow Alabama businesses by 200%" or "The #1 Digital Marketing Agency in Mobile, AL" - something that immediately communicates concrete value.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The One Thing They Must Fix -->
+  <section class="section" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-top: 4px solid #f59e0b;">
+    <div class="container">
+      <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="0">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h2 style="color: #92400e;">The One Thing They Must Fix</h2>
+        <p style="color: #78350f; font-size: 1.125rem; line-height: 1.7;">
+          <strong>The H1 Tag.</strong> They are sacrificing SEO power for creativity. By changing the H1 from "Make Waves in the Digital World" to <strong>"Premier Digital Marketing Agency in Alabama"</strong>, they would likely see an immediate lift in rankings for their main head term.
+        </p>
+        <p style="color: #78350f; font-size: 1rem; margin-top: var(--spacing-lg);">
+          The brand message can still be prominent - just not in the most SEO-critical element on the page.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Takeaways -->
+  <section class="takeaways">
+    <div class="container">
+      <h2>Key Takeaways from This Teardown</h2>
+      <div class="takeaway-grid">
+        <div class="takeaway-card">
+          <div class="takeaway-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h4>Location Pages Win Local SEO</h4>
+          <p>Creating dedicated pages for each service area (Mobile, Daphne, Gulf Shores) is the gold standard for ranking in multiple local markets.</p>
+        </div>
+        <div class="takeaway-card">
+          <div class="takeaway-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </div>
+          <h4>Keyword-Rich URLs Matter</h4>
+          <p>Using <code>mobile-marketing-agency.html</code> instead of <code>/locations/mobile</code> reinforces keywords in every URL.</p>
+        </div>
+        <div class="takeaway-card">
+          <div class="takeaway-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h4>H1 Tags Are for Keywords</h4>
+          <p>Save clever taglines for sub-headlines. Your H1 should contain the primary keyword you want to rank for.</p>
+        </div>
+        <div class="takeaway-card">
+          <div class="takeaway-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h4>Named Testimonials Build Trust</h4>
+          <p>Full names with business titles ("Darren Thibodaux, Owner, Gulf Coast Realty") are far more credible than anonymous reviews.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container">
+      <h2>Want Your Site Analyzed?</h2>
+      <p class="lead">Get a comprehensive teardown of your website with our 5-Point Inspection Framework. Receive an A-F grade and a clear roadmap to improve your rankings.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn--secondary btn--large">Request Your Audit</a>
+        <a href="teardowns.html" class="btn btn--accent btn--large">View More Teardowns</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo__icon">AS</div>
+            All<span>SEO</span>Marketing
+          </a>
+          <p>The industry's testing ground for what actually works in search and user experience. Learn SEO through real website teardowns.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigation</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="framework.html">Our Framework</a>
+            <a href="teardowns.html">Teardowns</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Framework</h4>
+          <div class="footer__links">
+            <a href="framework.html#serp">SERP Appearance</a>
+            <a href="framework.html#technical">Technical Health</a>
+            <a href="framework.html#onpage">On-Page Structure</a>
+            <a href="framework.html#content">Content & Authority</a>
+            <a href="framework.html#conversion">Conversion Optimization</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Resources</h4>
+          <div class="footer__links">
+            <a href="teardowns.html">Latest Teardowns</a>
+            <a href="about.html">Our Mission</a>
+            <a href="contact.html">Get Audited</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 AllSEOMarketing.com. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
